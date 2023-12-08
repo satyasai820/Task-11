@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-11</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <script src="./assets/js/Script.js"></script>
+    </head>
+    <body>
+        <form class="container mt-4 border bg-light"  >
+            <h2 class="text-danger text-center mt-3">Register Now..!</h2>
+            <!-- first name start -->
+                <div class="" >
+                    <label for="exampleInputFirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control"placeholder="First Name" id="firstName" >
+                    <p id="er1" class="text-danger"></p>
+                    <p id="er11" class="text-danger"></p>
+                </div>
+            <!-- first name End -->
+
+            <!-- second name start -->
+              <div class="mt-4">
+                <label for="exampleInputSecondName" class="form-label">Second Name</label>
+                <input type="text" class="form-control" placeholder="Second Name" id="secondName">
+                <p id="er2" class="text-danger"></p>  
+              </div>
+            <!-- second name End -->
+
+            <!-- email start -->
+            <div class="mt-4">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" placeholder="email" id="em">
+              <p id="er3" class="text-danger"></p>
+            </div>
+            <!-- email End -->
+
+            <!-- password Start -->
+            <div class="row mt-4">
+                <div class="col-12 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="Password" id="pw">
+                  <p id="er4" class="text-danger"></p>
+                </div>
+                <div class="col">
+                  <label for="exampleInputCpassword1" class="form-label">Confirm Password</label> 
+                  <input type="password" class="form-control" placeholder="Confirm Password" id="cpw">
+                  <p id="er5" class="text-danger"></p>
+                </div>
+            </div>
+            <!-- password End -->
+
+            <!-- Number start -->
+            <div class="row mt-4">
+                <div class="col-12 col-md-6">
+                  <label for="exampleInputDateOfBirth1" class="form-label">Date of Birth</label>
+                  <input type="date" class="form-control" placeholder="date of Birth" id="dob">
+                  <p id="er6" class="text-danger"></p>
+                </div>
+                <div class="col">
+                  <label for="exampleInputNumber1" class="form-label">Phone Number</label> 
+                  <input type="number" class="form-control" placeholder="Phone Number" id="num">
+                  <p id="er7" class="text-danger"></p>
+                </div>
+            </div>
+            <!-- Number End -->
+
+            <!-- Gender start -->
+            <div id="gender">
+                <p class="mt-4">Gender</p>
+                 <input type="radio" name="fav" value="MALE">
+                 <label for="male">Male</label><br>
+                 <input type="radio" name="fav" value="FEMALE">
+                 <label for="female">Female</label><br>
+                 <input type="radio" name="fav" value="OTHER">
+                 <label for="Other">Other</label><br>
+                 <p id="er8" class="text-danger"></p>
+            </div>    
+            <!-- Gender End -->
+
+            <!-- country -->
+            <div class="col-md-4 mt-4">
+                <label for="inputState" class="form-label">Country</label>
+                <select id="cou" class="form-select">
+                  <option ></option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>Japan</option>
+                  <option>Poland</option>
+                  <option>Pakistan</option>
+                </select>
+                <p id="er9" class="text-danger"></p>
+            </div>
+
+              <!-- checkbox start -->
+            <div class="mb-3 form-check mt-4">
+              <input type="checkbox" class="form-check-input"  id="Check" >
+              <label class="form-check-label" for="Check1"> Agree to Privacy Policy</label>
+              <p id="er10" class="text-danger"></p>
+            </div>
+            <!-- checkbox End -->
+            <div class="text-center">
+            <button type="button" class="btn btn-success mb-3 " id="btn">Submit</button>
+            </div>
+          </form>
+
+          <!-- form End -->
+
+            <!-- modal start -->
+            <div class="modal" id="modelForm">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-white">Registration Successfully...! </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-body text-white">Thanks For Your Time </p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <a href="" type="button" class="btn btn-success" data-bs-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- model end -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
